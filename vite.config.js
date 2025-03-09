@@ -9,5 +9,5 @@ export default defineConfig({
       'firebaseui': 'firebaseui/dist/firebaseui.js'
     }
   },
-  base: '/nerooh-site/',
+  base: '/',
 }); 

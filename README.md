@@ -13,12 +13,9 @@ Interface web para controle de impressora 3D com funcionalidades de chat, histó
 
 ## Configuração
 
-### Variáveis de Ambiente
+### Autenticação
 
-O projeto usa variáveis de ambiente para configuração do Firebase. Você pode configurá-las de duas maneiras:
-
-1. Usando o arquivo `.env` (já incluído no repositório)
-2. Criando seu próprio arquivo `.env` baseado no `.env.example`
+O projeto utiliza Firebase para autenticação e banco de dados. As credenciais já estão configuradas no arquivo `auth.js`.
 
 ### Instalação
 

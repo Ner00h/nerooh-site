@@ -2,17 +2,15 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider, FacebookAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from 'firebase/auth';
 import { getDatabase } from 'firebase/database';
 
-// Configuração do Firebase com suporte a variáveis de ambiente
-// Isso permite que o projeto funcione tanto localmente quanto no GitHub
 const firebaseConfig = {
-    apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "AIzaSyCKKWqZvVKi0GZDL1Ox9NC2y-zlkPqqhp8",
-    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "nerooh-site.firebaseapp.com",
-    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "nerooh-site",
-    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "nerooh-site.firebasestorage.app",
-    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "953464728137",
-    appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:953464728137:web:89dac94581e4f03cf86d98",
-    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || "G-MRFQRTQY9R",
-    databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL || "https://nerooh-site-default-rtdb.firebaseio.com"
+    apiKey: "AIzaSyCKKWqZvVKi0GZDL1Ox9NC2y-zlkPqqhp8",
+    authDomain: "nerooh-site.firebaseapp.com",
+    projectId: "nerooh-site",
+    storageBucket: "nerooh-site.firebasestorage.app",
+    messagingSenderId: "953464728137",
+    appId: "1:953464728137:web:89dac94581e4f03cf86d98",
+    measurementId: "G-MRFQRTQY9R",
+    databaseURL: "https://nerooh-site-default-rtdb.firebaseio.com"
 };
 
 const app = initializeApp(firebaseConfig);
